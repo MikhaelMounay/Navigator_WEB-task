@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+body {
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Start: Essential Items */
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg2 {
+    background-color: #f7f7f7;
+}
+
+.bg3 {
+    background-color: #ef326a;
+}
+
+.bg4 {
+    background-color: #222222;
+}
+
+.bg5 {
+    background-color: #1b1b1b;
+}
+
+.icon {
+    display: inline-block;
+    padding: 0.75rem;
+    font-size: 1.75rem;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    line-height: 1.2;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.icon-red {
+    background-color: white;
+    color: #fd4a7b;
+}
+
+.icon-red-reverse {
+    background: linear-gradient(to right, #f9633e, #fd346e);
+    color: white;
+}
+
+.icon-heavyblue {
+    background-color: #3598db;
+    color: white;
+    font-size: 1.5rem;
+    height: 47px;
+    width: 47px;
+    line-height: 1.1;
+}
+
+.section-title-above {
+    font-weight: bolder;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-weight: bolder;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.section-title-underline {
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, #f9633e, #fd346e);
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+    transition: 0.2s;
+}
+
+.section-title-underline:hover {
+    width: 150px;
+}
+
+.myDefaultBtn {
+    background: linear-gradient(to right, #f9633e, #fd346e, #f9633e);
+    background-size: 200%;
+    border-radius: .2rem;
+    color: white;
+    width: 150px;
+    transition: 0.2s;
+}
+
+.myDefaultBtn:hover {
+    color: white;
+    background-position-x: 100%;
+}
+
+.social-links-container {
+    letter-spacing: 0.25rem;
+}
+
+.social-links-container a {
+    color: rgba(0, 0, 0, .55);
+}
+
+
+/* End: Essential Items */
+
+
+/* Start: Navbar */
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* End: Navbar */
+
+
+/* Start: Hero Section */
+
+.hero {
+    height: calc(100vh - 56px);
+}
+
+.hero .container-fluid .btn {
+    background: linear-gradient(to right, #f9633e, #fd346e, #f9633e);
+    background-size: 200%;
+    color: white;
+    width: 13rem;
+    line-height: 2rem;
+    transition: 0.3s;
+}
+
+.hero .container-fluid .btn:hover {
+    background-position-x: 100%;
+}
+
+
+/* End: Hero Section */
+
+
+/* Start: What We Have Explored */
+
+#WhatWeHaveExplored-section .row p.fs-3 {
+    /* text-align: justify; */
+    line-height: 2.3rem;
+    padding-left: 80px;
+}
+
+#WhatWeHaveExplored-section .row p.fs-3::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #fb3b63;
+    border-radius: 0.3rem;
+}
+
+
+/* End: What We Have Explored */
+
+
+/* Start: About Us Section */
+
+
+/* End: About Us Section */
+
+
+/* Start: Service Section */
+
+#Service-section .row {
+    width: 75%;
+}
+
+#Service-section .row .card .myCardBg {
+    font-size: 5rem;
+    color: #f3f1f2;
+    text-align: left;
+    height: 18rem;
+    padding: 1rem 0 0 1.5rem;
+}
+
+#Service-section .row .card .card-img-overlay {
+    top: 15%;
+}
+
+@media (max-width: 991.98px) {
+    #Service-section .row {
+        width: 100%;
+    }
+}
+
+
+/* End: Service Section */
+
+
+/* Start: Portfolio Section */
+
+#Portfolio-section .my-card-container {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    transition: 0.2s;
+}
+
+#Portfolio-section .my-card-container:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+#Portfolio-section ul.nav.nav-pills .nav-item .nav-link {
+    width: max-content;
+    border-radius: 0;
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Portfolio-section ul.nav.nav-pills .nav-item .nav-link.active {
+    color: black;
+    background-color: unset;
+    border-bottom: solid #ef326a;
+}
+
+#Portfolio-section ul.nav.nav-pills .nav-item .nav-link:not(.active) {
+    color: #6c757d;
+    transition: 0.1s;
+}
+
+#Portfolio-section ul.nav.nav-pills .nav-item .nav-link:not(.active):hover {
+    color: black;
+}
+
+
+/* End: Portfolio Section */
+
+
+/* Start: Team Section */
+
+#Team-section .card .card-img-top img {
+    transition: 0.2s;
+}
+
+#Team-section .card .card-img-top img:hover {
+    transform: scale(1.05) translate(-10px, -10px);
+    border-radius: 0.3rem;
+}
+
+#Team-section .card .card-body a {
+    background: linear-gradient(to right, #f9633e, #fd346e, #f9633e);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.2s;
+}
+
+#Team-section .card .card-body a:hover {
+    background-position-x: 100%;
+}
+
+
+/* End: Team Section */
+
+
+/* Start: Pricing Section */
+
+#Pricing-section .row {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#Pricing-section .row .card .card-img-top .card .card-img-overlay {
+    top: 5%;
+}
+
+#Pricing-section .row .card .card-body p {
+    line-height: 2.5;
+}
+
+@media (max-width: 991.98px) {
+    #Pricing-section .row {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Pricing-section .row .card .card-img-top .card .card-img-overlay {
+        top: 25%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #Pricing-section .row {
+        width: 100%;
+    }
+    #Pricing-section .row .card .card-img-top .card .card-img-overlay {
+        top: 20%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #Pricing-section .row .card .card-img-top .card .card-img-overlay {
+        top: 2.5%;
+    }
+}
+
+
+/* End: Pricing Section */
+
+
+/* Start: Clients Section */
+
+#Clients-section .row .card {
+    background-color: transparent;
+    color: white;
+}
+
+#Clients-section .row .card .myQuotationMark {
+    font-size: 12.5rem;
+    line-height: 0.15;
+    margin-top: 4rem;
+}
+
+#Clients-section .row .card img {
+    border-radius: 50%;
+    width: 20%;
+    margin: 2rem auto;
+}
+
+
+/* End: Clients Section */
+
+
+/* Start: Blog Section */
+
+#Blog-section .row .card img.card-img-top {
+    transition: 0.2s;
+}
+
+#Blog-section .row .card img.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+#Blog-section .row .card .card-body a.myDefaultBtn {
+    height: 50px;
+    font-size: 0.95rem;
+    line-height: 2.4;
+}
+
+
+/* End: Blog Section */
+
+
+/* Start: Contact Us Section */
+
+#ContactUs-section .myMarkerImg {
+    height: 285px;
+}
+
+#ContactUs-section .feedback-form button[type=submit] {
+    background-color: #ef326a;
+    color: white;
+    width: 100%;
+    transition: 0.2s;
+    height: 45px;
+    font-size: 0.9rem;
+}
+
+#ContactUs-section .feedback-form button[type=submit]:hover {
+background-color: #d42a5d;
+}
+
+#ContactUs-section .contact-info .row i.icon {
+    font-size: 1.25rem;
+    padding: 0;
+    height: unset;
+    width: unset;
+}
+
+/* End: Contact Section */
+
+
+/* Start: Links Section */
+
+
+
+#Links-sections .nav .nav-link {
+    color: #6c757d;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#Links-sections .nav .nav-link:hover {
+    color: #d42a5d;
+}
+
+#Links-sections form button[type=submit] {
+    height: 38px;
+    font-size: 0.8rem;
+}
+
+
+/* End: Links Section */
+
+
+/* Start: Footer */
+
+.myFooterContainer {
+    border-top: solid #262626 3px;
+}
+
+.myFooterContainer p a {
+    color: #d42a5d;
+    text-decoration: none;
+}
+
+.myFooterContainer p a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-social-links {
+    letter-spacing: 0.45rem;
+    line-height: 3.5rem;
+}
+
+footer .footer-social-links span {
+    display: inline-block;
+    line-height: initial;
+    background-color: #3598db;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 1rem 0 0 0.45rem;
+    transition: 0.2s;
+}
+
+footer .footer-social-links span:hover {
+    background-color: #2a79ad;
+}
+
+
+/* End: Footer */
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #d42a5d;
+    border-color: #d42a5d;
+}
+
+#scrollTopBtn:hover {
+    background-color: #b6234f;
+    border-color: #b6234f;
+}
